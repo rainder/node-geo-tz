@@ -1,0 +1,24 @@
+{
+  "name": "@rainder/geo-tz",
+  "version": "0.0.1",
+  "description": "Returns a precise timezone at the specific gps coordinates",
+  "main": "index.js",
+  "dependencies": {
+    "co": "^4.6.0",
+    "geo-point": "^1.1.2",
+    "lodash": "^4.17.2",
+    "shapefile": "^0.5.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gps",
+    "timezone",
+    "shapefile",
+    "shp"
+  ],
+  "author": "Andrius Skerla",
+  "license": "ISC"
+}
