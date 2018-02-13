@@ -2,3 +2,7 @@
 .idea
 node_modules
 data
+.nyc_output
+coverage
+test/world
+test/world.zip

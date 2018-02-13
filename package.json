@@ -8,9 +8,14 @@
     "geo-point": "^1.1.2",
     "shapefile": "^0.5.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "nyc": "^11.4.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:prepare": "wget http://efele.net/maps/tz/world/tz_world.zip -O test/world.zip; unzip test/world.zip -d test; rm test/world.zip",
+    "test": "nyc mocha"
   },
   "keywords": [
     "gps",
@@ -27,5 +32,14 @@
   "bugs": {
     "url": "https://github.com/rainder/node-geo-tz/issues"
   },
-  "homepage": "https://github.com/rainder/node-geo-tz#readme"
+  "homepage": "https://github.com/rainder/node-geo-tz#readme",
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  }
 }
