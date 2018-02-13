@@ -4,6 +4,11 @@ It takes some time to load and preprocess shapefile, but once it's loaded it's s
 
 **Note: both `*.shp` and `*.dbf` source files are required**.
 
+
+## Installation
+
+`npm install @rainder/geo-tz`
+
 ## API
 
 #### loadShapefile(filepath, options): Promise

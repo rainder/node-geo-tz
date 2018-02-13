@@ -5,9 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@rainder/point-in-polygon": "0.0.2",
-    "co": "^4.6.0",
     "geo-point": "^1.1.2",
-    "lodash": "^4.17.2",
     "shapefile": "^0.5.9"
   },
   "devDependencies": {},
