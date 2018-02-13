@@ -57,3 +57,10 @@ geoTimezone.loadShapefile('./tz_world.shp').then((tz) => {
   tz(point); //Europe/London
 })
 ```
+
+### Testing
+
+```bash
+$ npm run test:prepare
+$ npm run test
+```

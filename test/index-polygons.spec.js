@@ -5,7 +5,7 @@ const IndexPolygons = require('./../lib/index-polygons');
 const { MADRID, BARCELONA } = require('./_data');
 
 const pointInBarcelona = {
-  type: "point",
+  type: 'point',
   coordinates: [2.1371841430664062, 41.34485558373632]
 };
 

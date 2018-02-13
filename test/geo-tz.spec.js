@@ -2,10 +2,9 @@
 
 const { expect } = require('chai');
 const GeoTZ = require('./../lib/geo-tz');
-const { BARCELONA } = require('./_data');
 
-describe('index-polygons', () => {
-  it('should index and match both polygons', async () => {
+describe('geo-tz', () => {
+  it('return tz for london', async () => {
     const getTz = await GeoTZ.loadShapefile('./test/world/tz_world.shp');
     const tz = getTz({
       type: 'Point',
